@@ -9,9 +9,9 @@ keyboard.press(".")
 keyboard.release(".")
 keyboard.press(Key.backspace)
 keyboard.release(Key.backspace)
-
+req_shift = "_#$@:!%^&*()+`'\"><?|{}"
 for l in s:
-	if l in ["_","#","$","@",":"] or l.isupper():
+	if l in req_shift or l.isupper():
 		keyboard.press(Key.shift)
 	keyboard.press(l)
 	keyboard.release(l)
